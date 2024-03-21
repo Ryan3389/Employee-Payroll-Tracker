@@ -6,6 +6,9 @@ This application allows employers to better manage their payroll by entering eac
 
 ## Visuals
 
-Screenshot of deployed application [deployed website](/images/deployed-app.png)
-Link to deployed application: https://ryan3389.github.io/Employee-Payroll-Tracker/
+Screenshot of deployed application:
+[deployed website](/images/deployed-app.png)
+
+Link to deployed application: 
+https://ryan3389.github.io/Employee-Payroll-Tracker/
 
