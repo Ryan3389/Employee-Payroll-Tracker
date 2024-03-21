@@ -12,3 +12,7 @@ Screenshot of deployed application:
 Link to deployed application: 
 https://ryan3389.github.io/Employee-Payroll-Tracker/
 
+
+## NOTE
+
+When completing the collectEmployees function, I used Xpert Learning assistant as a guide, to be pointed in the right direction, but this function was completely written by myself and I did not copy and paste any code.
