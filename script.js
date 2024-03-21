@@ -3,20 +3,24 @@ const addEmployeesBtn = document.querySelector('#add-employees-btn');
 
 // Collect employee data
 const collectEmployees = function () {
-  // TODO: Get user input to create and return an array of employee objects
+  //Array that holds employee info
   let companyStaffArr = []
 
+  //Variable which will later be reassigned to the value of the confirm method
   let isNewEmployeeAdded = true;
   do {
+    //Employee information prompts
     let employeeFirstNamePrompt = prompt("Enter employee first name");
     let employeeLastNamePrompt = prompt("Enter employee last name");
     let employeeSalaryPrompt = prompt("Enter employee salary");
     isNewEmployeeAdded = confirm("Do you want to add a new employee?")
 
+    //checking if the value returned in the salary prompt is a number 
     if (isNaN(employeeSalaryPrompt)) {
       employeeSalary = 0
     }
 
+    //Pushing prompt values into an object, into the companyStaffArr
     companyStaffArr.push({
       firstName: employeeFirstNamePrompt,
       lastName: employeeLastNamePrompt,
@@ -29,11 +33,11 @@ const collectEmployees = function () {
 
 // Display the average salary
 const displayAverageSalary = function (employeesArray) {
-  // TODO: Calculate and display the average salary
+  //Calculating the total employee salary
   const totalEmployeeSalary = employeesArray.reduce(function (total, currentItem) {
     return total + currentItem.salary
   }, 0)
-
+  //Calculating the average salary based on the value returned in the variable above
   const averageEmployeeSalary = totalEmployeeSalary / employeesArray.length
 
   const salaryMessage = `The average salary between our ${employeesArray.length} employees is $${averageEmployeeSalary.toFixed(2)}`
@@ -42,8 +46,7 @@ const displayAverageSalary = function (employeesArray) {
 
 // Select a random employee
 const getRandomEmployee = function (employeesArray) {
-  // TODO: Select and display a random employee
-
+  //Generating a random index to render a random employee
   const randomEmployeeIndex = Math.floor(Math.random() * employeesArray.length)
 
 
